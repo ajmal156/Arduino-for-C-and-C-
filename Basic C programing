@@ -1,1 +1,44 @@
+#include<stdio.h>
 
+void play(){
+     printf("play single called.");
+
+}void playother(){
+     printf("playother player called.");
+
+}void playmultipl(){
+     printf("playmultiple player called.");
+
+}
+
+int main(){
+     int input;
+     printf("Play game.\n");
+     printf("Load game.\n");
+     printf("Load multiplayer.\n");
+     printf("Exit.\n");
+     printf("Selection: ");
+     scanf("%d" ,&input);
+
+     switch (input)
+     {
+     case 1:
+          play();
+          break;
+     case 2:
+          playother();
+          break;
+     case 3:
+          playmultipl();
+          break;
+     case 4:
+          printf("Thank you for your1 playing.\n");
+          break;
+
+     default:
+          printf("You set the correct information.");
+     break;
+     }
+     getchar();
+     return 0;
+}
